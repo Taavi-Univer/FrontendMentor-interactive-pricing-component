@@ -1,9 +1,9 @@
 let views = document.getElementById("viewsCount");
 let priceRange = document.getElementById("priceRange");
 let price = document.querySelector(".price");
-console.log(views.textContent);
+// console.log(views.textContent);
 
-priceRange.addEventListener("click", (e) => {
+priceRange.addEventListener("input", (e) => {
   level = e.target.value;
   // console.log(level);
 
@@ -24,3 +24,13 @@ priceRange.addEventListener("click", (e) => {
     price.textContent = "$36";
   }
 });
+
+priceRange.oninput = function () {
+  var value = ((this.value - this.min) / (this.max - this.min)) * 100;
+  this.style.background =
+    "linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) " +
+    value +
+    "%, #eaeefb " +
+    value +
+    "%, #eaeefb 100%)";
+};
