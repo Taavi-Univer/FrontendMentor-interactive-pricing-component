@@ -32,14 +32,14 @@
       </div>
 
       <div class="main-container">
-        <p class="pageviews"><span id="viewsCount">100K</span> Pageviews</p>
+        <p class="pageviews"><span id="viewCount">100K</span> Pageviews</p>
 
         <div class="choosePrice">
           <input id="priceRange" type="range" min="0" max="100" value="50" />
         </div>
 
         <div class="main-price-container">
-          <p class="price">$16</p>
+          <p class="price">$<span id="price">16</span></p>
           <p>/ month</p>
         </div>
 
@@ -48,7 +48,7 @@
           <!-- <span class="icon-check">on/off</span> -->
 
           <label class="switch">
-            <input type="checkbox" />
+            <input id="checkBox" type="checkbox" />
             <span class="slider round"></span>
           </label>
 
@@ -56,9 +56,13 @@
         </div>
 
         <div class="main-container-bottom">
-          <p>Unlimited websites</p>
-          <p>100% data ownership</p>
-          <p>Email reports</p>
+          <p>
+            <img src="images/icon-check.svg" alt="checked" /> Unlimited websites
+          </p>
+          <p>
+            <img src="images/icon-check.svg" alt="checked" />100% data ownership
+          </p>
+          <p><img src="images/icon-check.svg" alt="checked" />Email reports</p>
         </div>
 
         <button>Start my trial</button>
