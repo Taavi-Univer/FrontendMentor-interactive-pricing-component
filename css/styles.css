@@ -1,12 +1,12 @@
 :root {
-  /* Primary */
+
   --full-slide-bar: hsl(174, 77%, 80%);
   --slider-bg: hsl(174, 86%, 45%);
   --discount-bg: hsl(14, 92%, 95%);
   --discount-text: hsl(15, 100%, 70%);
   --cta-text: hsl(226, 100%, 87%);
 
-  /* Neutral */
+
   --pricing-component-bg: hsl(0, 0%, 100%);
   --main-bg: hsl(230, 100%, 99%)
   --emptty-slider-bg:hsl(224, 65%, 95%);
@@ -15,24 +15,6 @@
   --cta-text-bg: hsl(227, 35%, 25%);
 }
 
-/* element {
-  background-color: var(--main-bg-color);
-} */
-
-
-
-/* Page view and pricing totals
-
-Here are the different page view ranges and the corresponding monthly price totals:
-
-- 10K pageviews / $8 per month
-- 50K pageviews / $12 per month
-- 100K pageviews / $16 per month
-- 500k pageviews / $24 per month
-- 1M pageviews / $36 per month
-
-If the visitor switches the toggle to yearly billing, a 25% discount should be applied to all prices. */
-
 *{
   margin: 0;
   padding: 0;
@@ -40,19 +22,9 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 }
 
 body {
-  /* min-width: 100vw; */
   background-image: url("../images/bg-pattern.svg");
   background-size: cover;
-  /* background-size: auto; */
-  
-  /* background-position: right -1820px top -300px; */
-  /* background-position: top; */
-  /* background-position: center; */
-
   background-repeat: no-repeat;
-
-  /* background-attachment: fixed; */
- 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -66,17 +38,10 @@ body {
   font-size: 15px;
   font-family: 'Manrope', sans-serif;
   text-align: center;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* margin-bottom: 2em; */
-  /* padding: 0 2em; */
-  /* padding-top: 1em; */
 }
 
 .top-container{
   padding: 1.6em;
-  /* background-color: blue; */
   background-image: url("../images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -103,12 +68,12 @@ h1{
 
 .main-container{
   background-color: white;
-  /* background-color: brown; */
   padding-top: 2em;
   border-radius: 5px;
   margin: 2em auto;
   box-shadow: 0 13px 34px 0 rgba(0,0,0,0.1);
 }
+
 
 .pageviews{
   font-size: .9rem;
@@ -120,37 +85,34 @@ h1{
 
 .choosePrice{
   margin-bottom: 3em;
-/* position: relative; */
 }
-
-
 
 input[type="range"] {
 
-    -webkit-appearance: none;
-    width: 80%;
-    height: 0.6rem;
-    border-radius: 5px;
-    /* background: -webkit-gradient(linear, left top, right top, from(var(--full-slide-bar)), color-stop(50%,var(--full-slide-bar)), color-stop(0%, #eaeefb), to(#eaeefb)); */
-    background: linear-gradient(to right,var(--full-slide-bar) 0%,var(--full-slide-bar) 50%, #eaeefb 50%, #eaeefb 100%);
+  -webkit-appearance: none;
+  width: 80%;
+  height: 0.3rem;
+  border-radius: 5px;
+  /* background: -webkit-gradient(linear, left top, right top, from(var(--full-slide-bar)), color-stop(50%,var(--full-slide-bar)), color-stop(0%, #eaeefb), to(#eaeefb)); */
+  background: linear-gradient(to right,var(--full-slide-bar) 0%,var(--full-slide-bar) 50%, #eaeefb 50%, #eaeefb 100%);
 }
 
 input[type="range"]::-webkit-slider-thumb {
 
-    -webkit-appearance: none;
-    appearance: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    /* background-color:lightgrey; */
-    background-color:var(--slider-bg);
-    cursor: pointer;
-    /* -webkit-box-shadow: 0px 20px 30px var(--slider-bg); */
-            box-shadow: 0px 13px 60px var(--slider-bg);
-    background-image: url('../images/icon-slider.svg');
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* background-color:lightgrey; */
+  background-color:var(--slider-bg);
+  cursor: pointer;
+  /* -webkit-box-shadow: 0px 20px 30px var(--slider-bg); */
+          box-shadow: 0px 13px 60px var(--slider-bg);
+  background-image: url('../images/icon-slider.svg');
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 
@@ -175,8 +137,8 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: center;
   align-items: center;
   padding-bottom: 3em;
-  border-bottom: 1px solid rgba(0,0,0,.1);
-  margin-bottom: 2em;
+  /* border-bottom: 1px solid rgba(0,0,0,.1); */
+  margin-bottom: 1em;
 }
 
 .switch {
@@ -249,18 +211,19 @@ input:checked + .slider:before {
 }
 
 .main-container-bottom{
-  /* background-color: blue; */
-  /* width: 50%; */
+  border-top: 1px solid rgba(0,0,0,.1);
+  padding-top: 1em;
   margin-bottom: 2em;
-  position: relative;
-  /* left: 12px; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
 
+.main-container-bottom-list{
+  margin-bottom: 1em;
 }
 
 .main-container-bottom p{
-/* background-color: red; */
   font-size: .7rem;
   margin-bottom: 1em;
   padding: .6em;
@@ -268,27 +231,13 @@ input:checked + .slider:before {
 }
 
 .main-container-bottom p img{
-/* background-color: red; */
- 
   padding-right: .6em;
-  
 }
 
-/* .main-container-bottom p::before{
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 110px;
-  background-image: url("../images/icon-check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-
-button{
+.main-container-bottom button{
+  width: 200px;
   padding: .9em 2.6em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   background-color: var(--cta-text-bg);
   color: var(--cta-text);
   font-size: .8rem;
@@ -307,3 +256,89 @@ button{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 800px) {
+  .container {
+    min-width: 600px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .top-container p {
+    font-size: 1rem;
+  }
+
+  .main-container-top {
+    display: grid;
+    grid-template-areas:
+      "views price"
+      "slider slider"
+      "billing billing";
+  }
+
+  .pageviews {
+    grid-area: views;
+    align-self: center;
+    font-size: 1rem;
+  }
+
+  .choosePrice {
+    grid-area: slider;
+  }
+
+  input[type="range"] {
+    height: 0.5rem;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .main-price-container {
+    grid-area: price;
+  }
+
+  .price {
+    font-size: 2.3rem;
+  }
+
+  .main-billing-container {
+    grid-area: billing;
+    justify-self: right;
+    font-size: 1rem;
+    margin-bottom: initial;
+    padding-right: 5em;
+  }
+
+  .main-container-bottom {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-container-bottom-list {
+    margin-bottom: initial;
+    padding: 1em 0;
+  }
+
+  .main-container-bottom-list p {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: initial;
+  }
+
+  .main-container-bottom-list img {
+    width: 22px;
+  }
+
+  .main-container-bottom button {
+    font-size: 1rem;
+    margin-bottom: initial;
+  }
+}
+
+
