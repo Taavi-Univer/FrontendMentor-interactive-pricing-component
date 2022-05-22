@@ -58,11 +58,11 @@ h1{
   margin-bottom: 1em;
 }
 
-.top-container p{
+.invite p{
   font-size: .8rem;
 }
 
-.top-container p:last-child{
+.invite p:last-child{
       margin-top: .2em;
 }
 
@@ -235,7 +235,7 @@ input:checked + .slider:before {
 }
 
 .main-container-bottom button{
-  width: 200px;
+  /* width: 200px; */
   padding: .9em 2.6em;
   margin-bottom: 3em;
   background-color: var(--cta-text-bg);
@@ -264,10 +264,21 @@ input:checked + .slider:before {
 
   h1 {
     font-size: 1.7rem;
+    margin-bottom: .3em;
   }
 
-  .top-container p {
-    font-size: 1rem;
+  .invite {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* align-content: center; */
+  }
+
+  .invite p {
+    /* background-color: red; */
+    /* align-content: center; */
+    font-size: .9rem;
   }
 
   .main-container-top {
