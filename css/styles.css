@@ -6,7 +6,6 @@
   --discount-text: hsl(15, 100%, 70%);
   --cta-text: hsl(226, 100%, 87%);
 
-
   --pricing-component-bg: hsl(0, 0%, 100%);
   --main-bg: hsl(230, 100%, 99%)
   --emptty-slider-bg:hsl(224, 65%, 95%);
@@ -22,7 +21,7 @@
 }
 
 body {
-  background-image: url("../images/bg-pattern.svg");
+  background-image: url("/images/bg-pattern.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -42,7 +41,7 @@ body {
 
 .top-container{
   padding: 1.6em;
-  background-image: url("../images/pattern-circles.svg");
+  background-image: url("/images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -93,7 +92,7 @@ input[type="range"] {
   width: 80%;
   height: 0.3rem;
   border-radius: 5px;
-  /* background: -webkit-gradient(linear, left top, right top, from(var(--full-slide-bar)), color-stop(50%,var(--full-slide-bar)), color-stop(0%, #eaeefb), to(#eaeefb)); */
+  background: -webkit-gradient(linear, left top, right top, from(var(--full-slide-bar)), color-stop(50%,var(--full-slide-bar)), color-stop(0%, #eaeefb), to(#eaeefb));
   background: linear-gradient(to right,var(--full-slide-bar) 0%,var(--full-slide-bar) 50%, #eaeefb 50%, #eaeefb 100%);
 }
 
@@ -104,12 +103,11 @@ input[type="range"]::-webkit-slider-thumb {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* background-color:lightgrey; */
   background-color:var(--slider-bg);
   cursor: pointer;
-  /* -webkit-box-shadow: 0px 20px 30px var(--slider-bg); */
+  -webkit-box-shadow: 0px 20px 30px var(--slider-bg);
           box-shadow: 0px 13px 60px var(--slider-bg);
-  background-image: url('../images/icon-slider.svg');
+  background-image: url('/images/icon-slider.svg');
   background-size: 55%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -137,7 +135,6 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: center;
   align-items: center;
   padding-bottom: 3em;
-  /* border-bottom: 1px solid rgba(0,0,0,.1); */
   margin-bottom: 1em;
 }
 
@@ -235,7 +232,6 @@ input:checked + .slider:before {
 }
 
 .main-container-bottom button{
-  /* width: 200px; */
   padding: .9em 2.6em;
   margin-bottom: 3em;
   background-color: var(--cta-text-bg);
@@ -259,18 +255,13 @@ input:checked + .slider:before {
   }
 
   .invite {
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* align-content: center; */
   }
 
   .invite p {
-    /* background-color: red; */
-    /* align-content: center; */
     font-size: .9rem;
-    
   }
 
   .invite p:last-child {
